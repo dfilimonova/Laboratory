@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Заявка на ремонт ноутбука</h2>
+  </header>
+  <hr>
+  <form class="repair-form">
+    <div class="form-group">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Введите ваш email">
+    </div>
+    
+    <div class="form-group">
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон">
+    </div>
+  
+<div class="form-group">
+  <label for="country">Модель ноутбука</label>
+  <input id="model" name="model" list="modelList" placeholder="Выберите модель ноутбука">
+  <datalist id="modelList">
+    <option value="Lenovo">
+      <option value="Samsung">
+      <option value="Apple Mac">
+      <option value="Acer">
+      <option value="HP">
+      <option value="Xiaomi">
+      <option value="Другое">
+</datalist>
+</div>
+
+    <div class="form-group">
+      <label for="issue">Проблема:</label>
+      <textarea id="issue" name="issue" placeholder="Опишите проблему с ноутбуком"></textarea>
+    </div>
+ 
+    <div class="form-group">
+      <label for="priority">Сколько лет устройтству</label>
+      <input type="number" name="quantity" min="1" max="10" placeholder="Сколько лет устройтству">
+    </div>
+
+<div class="form-group">
+  <label for="term">Срок гарантии</label>
+  <input type="date" id="term" name="term" placeholder="Срок зависит от уровня сложности...">
+  <span id="mobile-hint" class="hint" style="color: gray;">*Укажите дату, до которой действует гарантия</span>
+</div>
+
+<div class="form-group">
+  <label for="agree_terms">Я согласен(на) на обработку персональных данных</label>
+  <input type="checkbox" id="agree_terms" name="agree_terms">
+<span id="mobile-hint" class="hint" style="color: gray;">Я согласен(на) на обработку персональных данных</span>
+</div>
+
+<button type="submit">Отправить заявку</button>
+  </form>  
+</body>
+</html>
