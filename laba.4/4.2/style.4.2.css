@@ -1,126 +1,125 @@
 .image-container {
   position: relative;
-  width: 1200px; /* Установите ширину и высоту по вашему усмотрению */
+  width: 1200px; 
   height: 651px;
   overflow: hidden;
 }
 
 .part1 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease;
+  width: 100px; 
   height: 200px;
 }
 @keyframes assembleImage1 {
-  0% { transform: translate(350px, 100px); } /* Начальное положение каждой части изображения */
-  100% { transform: translate(400px, 100px); } /* Конечное положение после анимации */
+  0% { transform: translate(350px, 100px); } 
+  100% { transform: translate(400px, 100px); } 
 }
 
-/* Применяем анимацию к каждой части изображения */
+
 .part1 {
-  animation: assembleImage1 2s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage1 2s forwards;
 }
 
 .part2 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease; 
+  width: 100px; 
   height: 200px;
 }
 @keyframes assembleImage2 {
-  0% { transform: translate(550px, 100px); } /* Начальное положение каждой части изображения */
-  100% { transform: translate(500px, 100px); } /* Конечное положение после анимации */
-}
+  0% { transform: translate(550px, 100px); }
+  100% { transform: translate(500px, 100px); }
 .part2 {
-  animation: assembleImage2 2s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage2 2s forwards; 
 }
 
 .part3 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease; 
+  width: 100px; 
   height: 200px;
 }
 @keyframes assembleImage3 {
-  0% { transform: translate(750px, 100px); } /* Начальное положение каждой части изображения */
-  100% { transform: translate(600px, 100px); } /* Конечное положение после анимации */
+  0% { transform: translate(750px, 100px); } 
+  100% { transform: translate(600px, 100px); } 
 }
 .part3 {
-  animation: assembleImage3 2s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage3 2s forwards; 
 }
 
 .part4 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease; 
+  width: 100px; 
   height: 200px;
 }
 @keyframes assembleImage4 {
-  0% { transform: translate(950px, 100px); } /* Начальное положение каждой части изображения */
-  100% { transform: translate(700px, 100px); } /* Конечное положение после анимации */
+  0% { transform: translate(950px, 100px); } 
+  100% { transform: translate(700px, 100px); } 
 }
 .part4 {
-  animation: assembleImage4 2s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage4 2s forwards;
 }
 
 .part5 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease; 
+  width: 100px; 
   height: 200px;
 }
 @keyframes assembleImage5 {
   0% { transform: translate(350px,350px); }
-  50% { transform: translate(400px, 300px); } /* Движение вверх */
-  100% { transform: translate(400px, 300px); } /* Оставаться на верхней позиции */
+  50% { transform: translate(400px, 300px); } 
+  100% { transform: translate(400px, 300px); } 
 }
 .part5 {
-  animation: assembleImage5 4s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage5 4s forwards; 
 }
 
 .part6 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease; 
+  width: 100px; 
   height: 200px;
 }
 @keyframes assembleImage6 {
   0% { transform: translate(550px, 350px); }
-  50% { transform: translate(500px, 300px); } /* Движение вверх */
-  100% { transform: translate(500px, 300px); } /* Оставаться на верхней позиции */
+  50% { transform: translate(500px, 300px); } 
+  100% { transform: translate(500px, 300px); } 
 }
 .part6 {
-  animation: assembleImage6 4s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage6 4s forwards; 
 }
 
 .part7 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease; 
+  width: 100px; 
   height: 200px;
 }
 @keyframes assembleImage7 {
   0% { transform: translate(750px, 350px); }
-  50% { transform: translate(600px, 300px); } /* Движение вверх */
-  100% { transform: translate(600px, 300px); } /* Оставаться на верхней позиции */
+  50% { transform: translate(600px, 300px); }
+  100% { transform: translate(600px, 300px); } 
 }
 .part7 {
-  animation: assembleImage7 4s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage7 4s forwards; 
 }
 
 .part8 {
   position: absolute;
-  transition: transform 5s ease; /* Устанавливаем плавное переходное состояние для анимации */
-  width: 100px; /* Установите ширину и высоту по вашему усмотрению */
+  transition: transform 5s ease; 
+  width: 100px;
   height: 200px;
 }
 @keyframes assembleImage8 {
   0% { transform: translate(950px, 350px); }
-  50% { transform: translate(700px, 300px); } /* Движение вверх */
-  100% { transform: translate(700px, 300px); } /* Оставаться на верхней позиции */
+  50% { transform: translate(700px, 300px); } 
+  100% { transform: translate(700px, 300px); } 
 }
 .part8 {
-  animation: assembleImage8 4s forwards; /* Применяем анимацию с задержкой к первой части */
+  animation: assembleImage8 4s forwards; 
 }
 
 
