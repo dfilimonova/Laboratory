@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание доставки цветов</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  padding: 100px;
+  background-image: url(https://klike.net/uploads/posts/2022-11/1669438954_2-1.jpg);
+  display: inline-block;
+  transform: translate(400px, 40px);
+  font-size: 25px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.info-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .info-icon span {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 20px;
+    top: 134px;
+    left: 310px;
+  }
+  
+  .info-icon::after {
+    content: attr(data-info);
+    position: absolute;
+    top: 140px;
+    left: 550px;
+    transform: translateX(-50%);
+    background: #ccc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 1px;
+    opacity: 0;
+    visibility: hidden;
+    width: 400px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .info-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  select, input {
+    width: 150px;
+    padding-top: 4px;
+    font-size: 16px;
+  }
+  
+  </style>
+  </head>
+  <body>
+    <h1>Расписание доставки цветов</h1>
+    <div class="info-icon" data-info="Если Вы делаете заказ с 8.00 до 16.00 в дни работы компании, то получить заказ Вы сможете после 16.00 этого же дня. 
+    Если заказ сделан до 8.00 в дни работы компании, то заказ Вы сможете получить с 8.00 до 16.00 этого же дня. 
+    Если заказ сделан после 16.00, то доставка заказа можно будет получить на следующий рабочий день компании с 8.00 до 16.00.">
+      <span>i</span>
+    </div>
+    <div class="input-container">
+      <label for="day">Выберите день недели:</label>
+      <select id="day">
+        <option value="понедельник">Понедельник</option>
+        <option value="вторник">Вторник</option>
+        <option value="среда">Среда</option>
+        <option value="четверг">Четверг</option>
+        <option value="пятница">Пятница</option>
+        <option value="суббота">Суббота</option>
+      </select>
+    </div>
+  
+    <div class="input-container">
+      <label for="time">Введите время заказа (часы 0-23):</label>
+      <input type="number" id="time" min="0" max="23">
+    </div>
+  
+    <button onclick="getDeliverySchedule()">Получить расписание доставки</button>
+    <p id="result"></p>
+    <script src="my.js"></script>
+  </body>
+  </html>

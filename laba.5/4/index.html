@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        function findDuplicateCharacters(str) {
+            let charMap = {}; 
+            let duplicates = [];
+          
+            for (let char of str) {
+              if (charMap[char]) {
+                charMap[char]++;
+              } else {
+                charMap[char] = 1;
+              }
+            }
+          
+            for (let char in charMap) {
+              if (charMap[char] > 1) {
+                duplicates.push(char);
+              }
+            }
+          
+            return duplicates;
+        }
+          
+        let inputString = "Hello, World!";
+        let result = findDuplicateCharacters(inputString);
+        let outputElement = document.getElementById("output");
+        outputElement.textContent = "Повторяющиеся символы в строке: " + result.join(", ");
+    </script>
+</body>
+</html>

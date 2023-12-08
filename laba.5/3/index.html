@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Часть Б: Удалить элементы, модуль целой части которых не изменяется при перестановке цифр в обратном порядке
+  function isPalindrome(n) {
+    let str = Math.abs(Math.trunc(n)).toString();
+    return str === str.split('').reverse().join('');
+  }
+  
+  function removePalindromes(arr) {
+    return arr.filter(x => !isPalindrome(x));
+  }
+  
+  let numbers = [123, 131, 245, 353, 464, 555, 676, 787, 898, 909];
+  let resultB = removePalindromes(numbers);
+  document.write('Массив после удаления палиндромов:' + resultB);
+    </script>
+</body>
+</html>
