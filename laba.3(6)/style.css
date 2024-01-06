@@ -1,0 +1,82 @@
+body{
+  background-image: url(https://mobimg.b-cdn.net/v3/fetch/f0/f02b1a2c8ae590477197d147f2b02528.jpeg?w=1470&r=0.5625);
+}
+
+.repair-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: hsl(0, 0%, 93%); /* Цвет фона */
+  outline: 2px solid #000; /* Чёрная рамка */
+  border: 3px solid #fff; /* Белая рамка */
+}
+
+header{
+  background: hsl(0, 0%, 93%); /* Цвет фона */
+  padding: 20px;
+}
+
+header h2 {
+  font-size: 40px;
+  color: #ffb5e1;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid #4f455f;
+  padding: 20px 10px;
+  background-color: #6e6dac;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+/* Стили для десктопной версии */
+@media screen and (min-width: 600px) {
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+  }
+  
+  input,
+  textarea,
+  select{
+    flex: 1;
+    width: 100%;
+  }
+
+span{
+display: none;
+}
+  
+  button {
+    margin-left: 280px;
+  }
+}
+
+/* Стили для мобильной версии */
+@media screen and (max-width: 599px) {
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: none;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+  }
+
+  button {
+     margin-left: 100px;
+  }
+}
